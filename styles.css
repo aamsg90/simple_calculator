@@ -19,7 +19,7 @@ tr {
   }
  
 
-input {
+#nums_display {
     border: none;
     outline: none;
     color: black;
@@ -35,6 +35,19 @@ input {
 }
 
 button {
+    font-size: 40px;
+    background: rgb(214, 214, 214);
+    box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #faf4f4;
+    display: inline-block;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 20px;
+    width: 102px;
+    height: 90px;
+    margin: 6px;
+}
+#hhh {
     font-size: 40px;
     background: rgb(214, 214, 214);
     box-shadow: 5px 5px 10px #b6acac, -5px -5px 10px #faf4f4;
