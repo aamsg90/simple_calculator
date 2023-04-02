@@ -11,7 +11,7 @@
     <div class="container">
         
 		<div class="calculator">
-            <input type="text" id="nums_display" name="display" placeholder="0">
+            <input type="text"  id="main_display"  placeholder="0" >
 
             <table>
                 <tr>
@@ -22,14 +22,14 @@
                     
                 </tr>
                 <tr>
-                    <td><button>7</button></td>
+                    <td><button onclick = "main_display.value = '7' ">7</button></td>
                     <td><button>8</button></td>
                     <td><button>9</button></td>
                     <td><button class="operation">*</button></td>
                 </tr>
                 <tr>
                     <td><button>4</button></td>
-                    <input id="hhh" type="button" value="7">
+                    <!-- <input id="hhh" type="button" value="7" onclick = "di.value = '7' "> -->
                     <td><button>5</button></td>
                     <td><button>6</button></td>
                     <td><button class="operation">-</button></td>
@@ -54,4 +54,7 @@
 
 	</div>
 </body>
+<script>
+    // let di = document.getElementById('di')
+</script>
 </html>
