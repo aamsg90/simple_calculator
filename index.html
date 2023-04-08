@@ -17,32 +17,32 @@
                 <tr>
                     <td><button class="clear-btn" onclick = "main_display.value = '' ">AC</button></td>
                     <td><button class="clear-btn" onclick = "main_display.value = main_display.value.slice(0,-1)">DEL</button></td>
-                    <td><button class="operation" onclick = "main_display.value += '%' ">%</button></td>
-                    <td><button class="operation" onclick = "main_display.value += '/' ">/</button></td>
+                    <td><button class="operation" onclick = "perc()">%</button></td>
+                    <td><button class="operation" onclick = "calculate('/')">/</button></td>
                     
                 </tr>
                 <tr>
-                    <td><button onclick = "main_display.value += '7' ">7</button></td>
-                    <td><button onclick = "main_display.value += '8' ">8</button></td>
-                    <td><button onclick = "main_display.value += '9' ">9</button></td>
-                    <td><button class="operation" onclick = "main_display.value += '*' ">*</button></td>
+                    <td><button onclick = "calculate(7)">7</button></td>
+                    <td><button onclick = "calculate(8)">8</button></td>
+                    <td><button onclick = "calculate(9) ">9</button></td>
+                    <td><button class="operation" onclick = "calculate('*')">*</button></td>
                 </tr>
                 <tr>
-                    <td><button onclick = "main_display.value += '4' ">4</button></td>
-                    <td><button onclick = "main_display.value += '5' ">5</button></td>
-                    <td><button onclick = "main_display.value += '6' ">6</button></td>
-                    <td><button class="operation" onclick = "main_display.value += '-' ">-</button></td>
+                    <td><button onclick = "calculate(4)">4</button></td>
+                    <td><button onclick = "calculate(5)">5</button></td>
+                    <td><button onclick = "calculate(6)">6</button></td>
+                    <td><button class="operation" onclick = "calculate('-')">-</button></td>
                 </tr>
                 <tr>
-                    <td><button onclick = "main_display.value += '1' ">1</button></td>
-                    <td><button onclick = "main_display.value += '2' ">2</button></td>
-                    <td><button onclick = "main_display.value += '3' ">3</button></td>
-                    <td><button class="operation" onclick = "main_display.value += '+' ">+</button></td>
+                    <td><button onclick = "calculate(1) ">1</button></td>
+                    <td><button onclick = "calculate(2) ">2</button></td>
+                    <td><button onclick = "calculate(3)">3</button></td>
+                    <td><button class="operation" onclick = "calculate('+')">+</button></td>
                 </tr>
                 <tr>
-                    <td><button onclick = "main_display.value += '.' ">.</button></td>
-                    <td><button onclick = "main_display.value += '0' ">0</button></td>
-                    <td><button  class="operation" id="eq_btn" onclick = "main_display.value = eval(main_display.value)">=</button></td>
+                    <td><button onclick = "calculate(0)">0</button></td>
+                    <td><button onclick = "calculate('.')">.</button></td>
+                    <td><button  class="operation" id="eq_btn" onclick = "result.value = eval(result.value)">=</button></td>
                     
                 </tr>
                 
@@ -54,6 +54,13 @@
 	</div>
 </body>
 <script>
-    // let di = document.getElementById('di')
+    let result = document.getElementById('main_display')
+    let calculate = (num)=>{
+        result.value+=num;
+    }
+    let perc = ()=>{
+        result.value=result.value/100;
+    }
+
 </script>
 </html>
