@@ -2,5 +2,6 @@
 minimal js used in this project  
 
 # next step:
-more styling and error fixing
+more styling and enhance functions 
 
+references: https://neumorphism.io/
